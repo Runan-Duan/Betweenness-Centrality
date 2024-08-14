@@ -1,0 +1,9 @@
+name: Betweenness-Centrality
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - networkx
+  - osmnx
+  - pandas
+  - geopandas
