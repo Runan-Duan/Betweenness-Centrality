@@ -23,12 +23,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Install Conda environment with Micromamba
-        uses: mamba-org/setup-micromamba@v1
+        
+      - uses: actions/setup-python@v5
         with:
-          environment-file: src/environment.yml
-          cache-environment: true
+          python-version: '3.9.18'
+          cache: 'pip' # caching pip dependencies
+          cache-dependency-path: src/requirements.txt
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r src/requirements.txt
+          pip install ipykernel
+          pip install nbconvert
           
       - name: Build Website
         shell: bash -el {0}
