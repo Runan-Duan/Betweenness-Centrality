@@ -1,0 +1,11 @@
+random
+os
+numpy
+networkx
+osmnx
+pandas
+geopandas
+matplotlib
+jupyter
+nbconvert
+ipykernel
