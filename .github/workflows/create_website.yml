@@ -27,7 +27,7 @@ jobs:
       - name: Install Conda environment with Micromamba
         uses: mamba-org/setup-micromamba@v1
         with:
-          environment-file: website_figure/environment.yml
+          environment-file: src/environment.yml
           cache-environment: true
           
       - name: Build Website
