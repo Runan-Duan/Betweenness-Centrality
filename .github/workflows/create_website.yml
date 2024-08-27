@@ -34,7 +34,7 @@ jobs:
         shell: bash -el {0}
         run: |
           cd src
-          jupyter nbconvert --to html --ExecutePreprocessor.kernel_name=python3 --execute  --output-dir=_build/html --no-input Research_questions.ipynb
+          jupyter nbconvert --to html --ExecutePreprocessor.kernel_name=python3 --output-dir=_build/html --no-input Research_questions.ipynb
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
