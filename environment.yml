@@ -1,0 +1,13 @@
+name: betweenness-centrality
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - networkx
+  - osmnx
+  - pandas
+  - geopandas
+  - matplotlib
+  - jupyter
+  - pre-commit
