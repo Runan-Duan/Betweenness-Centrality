@@ -1,0 +1,8 @@
+numpy
+networkx
+osmnx
+pandas
+geopandas
+matplotlib
+jupyter
+pre-commit
